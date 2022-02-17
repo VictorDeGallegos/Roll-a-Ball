@@ -31,7 +31,7 @@ public class Controller : MonoBehaviour
     Vector3 movimiento = new Vector3(moveHorizontal, 0.0f, moveVertical);
     rb.AddForce(movimiento * speed);
     count.text = contador.ToString();
-    if (contador >= 4)
+    if (contador >= 8)
     {
       ganadorTextObject.SetActive(true);
     }
