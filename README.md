@@ -13,4 +13,5 @@
 - Crear una interfaz de usuario básica.
 
 ## Video demostracion
-![roll-a-ball-video](https://user-images.githubusercontent.com/41756950/154411577-193bd813-8719-4776-a2c8-b058400cad53.gif)
+![roll-a-ball](https://user-images.githubusercontent.com/41756950/154412319-483af99d-565a-43ed-bd8f-6987520bc4d0.gif)
+
