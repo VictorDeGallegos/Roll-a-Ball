@@ -8,6 +8,7 @@ using UnityEngine.UI;
 
 public class Controller : MonoBehaviour
 {
+  public GameObject ganadorTextObject;
   public float speed;
   public int contador;
   Rigidbody rb;
@@ -17,6 +18,7 @@ public class Controller : MonoBehaviour
   {
     rb = GetComponent<Rigidbody>();
     count.text = contador.ToString();
+    ganadorTextObject.SetActive(false);
   }
 
   //Cada tiempo de maquina
@@ -29,6 +31,10 @@ public class Controller : MonoBehaviour
     Vector3 movimiento = new Vector3(moveHorizontal, 0.0f, moveVertical);
     rb.AddForce(movimiento * speed);
     count.text = contador.ToString();
+    if (contador >= 4)
+    {
+      ganadorTextObject.SetActive(true);
+    }
   }
 
   //Cada Frame
